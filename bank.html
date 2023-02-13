@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Unlimited money</title>
+</head>
+<body>
+    <header>
+        <h1 class="uppercase text-center text-w text-5xl p-5">Welcome to <span  class="text-indigo-600">Unlimited Bank</span></h1>
+    </header>
+
+    <main>
+        <section class="mt-12">
+            <div id="showNumbers" class="grid grid-cols-3 gap-4 mx-auto w-9/12 text-white">
+                <div class="bg-pink-900 p-8 rounded-md" id="deposit">
+                    <h6 class="text-2xl">Deposit</h6>
+                    <h1 class="text-5xl">$<span id="current-deposit">00</span></h1>
+                </div>
+                <div class="bg-indigo-900 p-8 rounded-md" id="withdraw">
+                    <h6 class="text-2xl">Withdraw</h6>
+                    <h1 class="text-5xl">$<span id="current-withdraw">00</span></h1>
+                </div>
+                <div class="bg-teal-600 p-8 rounded-md" id="balance">
+                    <h6 class="text-2xl">Balance</h6>
+                    <h1 class="text-5xl">$<span id="current-balance">1069</h1>
+                </div>
+                
+            </div>
+        </section>
+
+        <section>
+            <div id="showNumbers" class="grid grid-cols-2 gap-4 mx-auto w-9/12 text-white mt-12">
+                <div class="bg-stone-700 p-8 rounded-md" id="deposit-input">
+                    <h6 class="text-2xl">Enter amount to Deposit</h6>
+                    <div class="justify-center align-center">
+                        <input class="w-9/12 block px-3 mb-2 text-gray-900 focus:text-red-600" type="number" name="" id="deposit-amount">
+                        <button id="deposit-btn" class="bg-orange-500 px-8 py-2 rounded-lg font-medium hover:bg-orange-600">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-green-800 p-8 rounded-md" id="withdraw-input">
+                    <h6 class="text-2xl">Enter amount to Withdraw</h6>
+                    <div class="justify-center align-center">
+                        <input class="w-9/12 block px-3 mb-2 text-gray-900 focus:text-red-600" type="number" name="" id="withdraw-amount">
+                        <button id="withdraw-btn" class="bg-orange-500 px-8 py-2 rounded-lg font-medium hover:bg-orange-600">Withdraw</button>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="js_files/main.js"></script>
+    <script src="js_files/deposit.js"></script>
+    <script src="js_files/withdraw.js"></script>
+</body>
+</html>
